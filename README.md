@@ -45,3 +45,4 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 # CalendarioProyectoLCOM: Esta en proceso el diseño del formulario de implementación de las clases
+# CalendarioProyectoLCOM: Continuación de la implementación de las clases
