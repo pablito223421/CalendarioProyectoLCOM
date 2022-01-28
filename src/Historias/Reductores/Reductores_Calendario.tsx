@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import HISTORIA_CONSTANTES from "../Constantes";
 import * as _ from "lodash";
 import { combineReducers } from "redux";

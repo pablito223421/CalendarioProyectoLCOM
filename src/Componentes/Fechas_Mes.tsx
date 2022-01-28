@@ -20,11 +20,7 @@ interface Fecha_MesState {
 
 export default class Fecha_Mes extends React.Component<Fecha_MesProps, Fecha_MesState> {
     
-    // eslint-disable-next-line @typescript-eslint/no-useless-constructor
-    constructor(props:any){
-        super(props);
-    }
-
+   
     componentWillReceiveProps(){
         let date = new Date();
         let statics = {
@@ -46,7 +42,7 @@ export default class Fecha_Mes extends React.Component<Fecha_MesProps, Fecha_Mes
             onClick,
             that = this,
             isDate, className,
-            weekStack = Array.apply(null,{length: 7}).map(Number.call, Number),
+            weekStack = Array.apply(null,new Array(7)).map(Number.call, Number),
             startDay = this.props.firstOfMonth.getUTCDay(),
             first = this.props.firstOfMonth.getDay(),
             // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -59,7 +55,7 @@ export default class Fecha_Mes extends React.Component<Fecha_MesProps, Fecha_Mes
         }
 
         className = rows === 6 ? 'r-dates' : 'r-dates r-fix';
-        haystack = Array.apply(null, {length: rows}).map(Number.call, Number);
+        haystack = Array.apply(null,new Array(rows)).map(Number.call, Number);
         day = this.props.startDay + 1 - first;
         while (day > 1) {
             day -= 7;
@@ -79,7 +75,7 @@ export default class Fecha_Mes extends React.Component<Fecha_MesProps, Fecha_Mes
 
                                 if (isDate) {
                                     current = new Date(that.props.year, that.props.month, d);
-                                    if (current.getFullYear() === today.getFullYear() && current.getMonth() === today.getMonth() && current.getDate() == today.getDate()) {
+                                    if (current.getFullYear() === today.getFullYear() && current.getMonth() === today.getMonth() && current.getDate() === today.getDate()) {
                                         className = 'r-cell r-date r-today';
                                     } else {
                                         className = 'r-cell r-date';

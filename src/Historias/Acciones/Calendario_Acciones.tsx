@@ -1,9 +1,8 @@
 import HISTORIA_CONSTANTES from "../Constantes";
-const idGenerator = require('uuid/v4');
 
-export const addEvent = (fecha: string, evento: string) => ({
+export const addEvent = (fecha: string, evento: string , id:number) => ({
     type: HISTORIA_CONSTANTES.ACTIONS.AGREGAR_EVENTO,
-    id: idGenerator(),
+    id: id,
     fecha: fecha,
     eventoNombre: evento
 })
