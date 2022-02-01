@@ -1,0 +1,7 @@
+export const AGREGAR_NOTA = "AGREGAR_NOTA";
+export const ACTUALIZAR_NOTA = "ACTUALIZAR_NOTA";
+export const ELIMINAR_NOTA = "ELIMINAR_NOTA";
+export const SHOW_ACTUALIZA_NOTA = "SHOW_ACTUALIZA_NOTA";
+
+export const CAMBIAR_FECHA = "CAMBIAR_FECHA";
+export const SET_FECHA = "SET_FECHA";
